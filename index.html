@@ -27,11 +27,20 @@
 	<div class="box3">
 		<h3>Internacionales</h3>
 		<div class="international_projects"></div>
-	</div>		
+	</div>
+	
+	<div id='legend-content' style='display: none;'>
+		<div class='my-legend'>
+			<div class='legend-title'>Proyectos de OpenData</div>
+			<div class='legend-source'>By: <a href="http://opendata.mx" title="OpenData.mx">OpenDataMX</a></div>
+		</div>	
+	</div>
 </div>
 
 <script type='text/javascript'>  
 	var map = L.mapbox.map('map', 'fundarmexico.opendata_projects_v4', { gridControl: true, minZoom: 3, maxZoom:5, setZIndex:-1}).setView([11.5, 1.2], 3);	
+	
+	map.legendControl.addLegend(document.getElementById('legend-content').innerHTML);
 	
 	var content   = new Object();
 	var projects  = new Object();
