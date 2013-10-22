@@ -106,7 +106,7 @@
 			
 		} else {
 			for (x in content[key].local) {
-				html += '<a target="_blank" href="' + projects[content[key].local[x]].url + '">' + projects[content[key].local[x]].name + '</a><br/>';
+				html += '<a target="_blank" title="' +  projects[content[key].local[x]].name + '" href="' + projects[content[key].local[x]].url + '">' + projects[content[key].local[x]].name + '</a><br/>';
 			}
 		}
 		
@@ -120,7 +120,7 @@
 			
 		} else {
 			for (x in content[key].international) {
-				html += '<a target="_blank" href="' + projects[content[key].international[x]].url + '">' + projects[content[key].international[x]].name + '</a><br/>';
+				html += '<a target="_blank" title="' +  projects[content[key].international[x]].name + '" href="' + projects[content[key].international[x]].url + '">' + projects[content[key].international[x]].name + '</a><br/>';
 			}
 		}
 		
